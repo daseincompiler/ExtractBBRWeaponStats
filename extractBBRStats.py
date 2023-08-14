@@ -92,6 +92,9 @@ def main():
 
     categorized_weapon_count = sum(len(weapons)
                                    for weapons in categorized_weapons.values())
+    
+    if weapon_count != categorized_weapon_count:
+        print(f"there's {weapon_count} weapons raw data, but only {categorized_weapon_count} categorized weapons")
 
     output_data = {
         'update_version': "2.0.2",
