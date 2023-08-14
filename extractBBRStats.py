@@ -122,7 +122,7 @@ def main():
             }
         },
 
-        'weapon_list': categorized_weapons
+        'weapons_list': categorized_weapons
     }
 
     script_directory = os.path.dirname(os.path.abspath(__file__))
