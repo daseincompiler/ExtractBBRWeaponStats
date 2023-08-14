@@ -63,8 +63,23 @@ def extract_asset_data(directory_path):
 
     return weapons_data
 
+
 def get_weapon_count_by_category(category):
     return len(weapon_categories.get(category, []))
+
+
+def categorize_weapons(weapons_data):
+    categorized_weapons = {}
+    for category, weapons in weapon_categories.items():
+        categorized_weapons[category] = {}
+        for weapon in weapons:
+            if weapon in weapons_data:
+                categorized_weapons[category][weapon] = weapons_data[weapon]
+            else:
+                print(
+                    f"Error: weapon '{weapon}' from category '{category}' not found in weapons_data!")
+    return categorized_weapons
+
 
 def main():
     Tk().withdraw()  # Hide the root tkinter window
@@ -81,15 +96,7 @@ def main():
 
     weapon_count = len(weapons_data)
 
-    categorized_weapons = {}
-    for category, weapons in weapon_categories.items():
-        categorized_weapons[category] = {}
-        for weapon in weapons:
-            if weapon in weapons_data:
-                categorized_weapons[category][weapon] = weapons_data[weapon]
-            else:
-                print(
-                    f"Error: weapon '{weapon}' from category '{category}' not found in weapons_data!")
+    categorized_weapons = categorize_weapons(weapons_data)
 
     categorized_weapon_count = sum(len(weapons)
                                    for weapons in categorized_weapons.values())
@@ -119,7 +126,7 @@ def main():
                 'pistols': get_weapon_count_by_category("Pistols"),
                 'automatic_pistols': get_weapon_count_by_category("Automatic Pistols"),
                 'heavy_caliber_pistols': get_weapon_count_by_category("Heavy Caliber Pistols")
-            }
+            },
         },
 
         'weapons_list': categorized_weapons
