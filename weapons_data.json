@@ -1,8 +1,26 @@
 {
-    "update_version": "2.0.2",
-    "dump_date": "2023-08-14",
-    "weapon_count": 44,
-    "weapon_categories": {
+    "metadata": {
+        "update_version": "2.0.2",
+        "dump_date": "2023-08-14"
+    },
+    "counts": {
+        "total_weapon": 44,
+        "total_weapon_categories": 11,
+        "by_weapon_type": {
+            "assault_rifles": 12,
+            "submachine_guns": 6,
+            "personal_defense_weapons": 3,
+            "carbines": 2,
+            "light_support_guns": 2,
+            "light_machine_guns": 2,
+            "designated_marksman_rifles": 4,
+            "sniper_rifles": 6,
+            "pistols": 3,
+            "automatic_pistols": 1,
+            "heavy_caliber_pistols": 3
+        }
+    },
+    "weapon_list": {
         "Assault Rifles": {
             "AK74": {
                 "DamageOnInfantryBody": 31,
@@ -474,7 +492,7 @@
                 "ShotSoundDistance": 600
             }
         },
-        "Designated marksman Rifles": {
+        "Designated Marksman Rifles": {
             "MK20": {
                 "DamageOnInfantryBody": 45,
                 "DamageOnLightArmoredVehicles": 15,
@@ -701,7 +719,7 @@
                 "ShotSoundDistance": 600
             }
         },
-        "Automatic Pistols ": {
+        "Automatic Pistols": {
             "Glock_18": {
                 "DamageOnInfantryBody": 17,
                 "DamageOnLightArmoredVehicles": 0,
@@ -720,7 +738,7 @@
                 "ShotSoundDistance": 600
             }
         },
-        "Heavy Caliber Pistols ": {
+        "Heavy Caliber Pistols": {
             "Unica": {
                 "DamageOnInfantryBody": 60,
                 "DamageOnLightArmoredVehicles": 0,
@@ -773,6 +791,5 @@
                 "ShotSoundDistance": 600
             }
         }
-    },
-    "categorized_weapon_count": 44
+    }
 }

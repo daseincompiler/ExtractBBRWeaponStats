@@ -4,7 +4,7 @@ import datetime
 import time
 from tkinter import Tk, filedialog
 
-categories = {
+weapon_categories = {
     "Assault Rifles": ["AK74", "M4A1", "AK15", "SCAR-H", "AUG_A3", "SG550", "FAMAS", "ACR", "G36C", "HK419", "FAL", "AK5C"],
 
     "Submachine Guns": ["MP7", "UMP-45", "PP2000", "PP19", "Kriss_Vector", "MP5"],
@@ -17,15 +17,15 @@ categories = {
 
     "Light Machine Guns": ["M249", "Ultimax100"],
 
-    "Designated marksman Rifles": ["MK20", "M110", "MK14_EBR", "SVD"],
+    "Designated Marksman Rifles": ["MK20", "M110", "MK14_EBR", "SVD"],
 
     "Sniper Rifles": ["SSG_69", "SV-98", "L96", "Rem700", "M200", "MSR"],
 
     "Pistols": ["M9", "MP_443", "USP"],
 
-    "Automatic Pistols ": ["Glock_18"],
+    "Automatic Pistols": ["Glock_18"],
 
-    "Heavy Caliber Pistols ": ["Unica", "Desert_Eagle", "Rsh12"]
+    "Heavy Caliber Pistols": ["Unica", "Desert_Eagle", "Rsh12"]
 }
 
 
@@ -49,7 +49,6 @@ def extract_asset_data(directory_path):
             for key in data_keys:
                 for line in content:
                     if key + ": " in line:
-                        # Convert all attributes to integers
                         value = line.split(": ")[1].strip()
                         if '.' in value:
                             weapon_data[key] = float(value)
@@ -64,6 +63,8 @@ def extract_asset_data(directory_path):
 
     return weapons_data
 
+def get_weapon_count_by_category(category):
+    return len(weapon_categories.get(category, []))
 
 def main():
     Tk().withdraw()  # Hide the root tkinter window
@@ -81,28 +82,47 @@ def main():
     weapon_count = len(weapons_data)
 
     categorized_weapons = {}
-    for category, weapons in categories.items():
+    for category, weapons in weapon_categories.items():
         categorized_weapons[category] = {}
         for weapon in weapons:
             if weapon in weapons_data:
                 categorized_weapons[category][weapon] = weapons_data[weapon]
             else:
                 print(
-                    f"Weapon '{weapon}' from category '{category}' not found in weapons_data!")
+                    f"Error: weapon '{weapon}' from category '{category}' not found in weapons_data!")
 
     categorized_weapon_count = sum(len(weapons)
                                    for weapons in categorized_weapons.values())
-    
+
     if weapon_count != categorized_weapon_count:
-        print(f"there's {weapon_count} weapons raw data, but only {categorized_weapon_count} categorized weapons")
+        print(
+            f"Warning: there's {weapon_count} weapons raw data count, but only {categorized_weapon_count} categorized weapons count")
 
     output_data = {
-        'update_version': "2.0.2",
-        'dump_date': datetime.datetime.now().strftime('%Y-%m-%d'),
-        'weapon_count': weapon_count,
-        'weapon_categories' : len(categorized_weapons),
-        'categorized_weapon_count': categorized_weapon_count,
-        'weapon_categories': categorized_weapons
+        'metadata': {
+            'update_version': "2.0.2",
+            'dump_date': datetime.datetime.now().strftime('%Y-%m-%d'),
+        },
+
+        'counts': {
+            'total_weapon': weapon_count,
+            'total_weapon_categories': len(categorized_weapons),
+            'by_weapon_type': {
+                'assault_rifles': get_weapon_count_by_category("Assault Rifles"),
+                'submachine_guns': get_weapon_count_by_category("Submachine Guns"),
+                'personal_defense_weapons': get_weapon_count_by_category("Personal Defense Weapons"),
+                'carbines': get_weapon_count_by_category("Carbines"),
+                'light_support_guns': get_weapon_count_by_category("Light Support Guns"),
+                'light_machine_guns': get_weapon_count_by_category("Light Machine Guns"),
+                'designated_marksman_rifles': get_weapon_count_by_category("Designated Marksman Rifles"),
+                'sniper_rifles': get_weapon_count_by_category("Sniper Rifles"),
+                'pistols': get_weapon_count_by_category("Pistols"),
+                'automatic_pistols': get_weapon_count_by_category("Automatic Pistols"),
+                'heavy_caliber_pistols': get_weapon_count_by_category("Heavy Caliber Pistols")
+            }
+        },
+
+        'weapon_list': categorized_weapons
     }
 
     script_directory = os.path.dirname(os.path.abspath(__file__))
