@@ -25,8 +25,7 @@ def extract_asset_data(directory_path):
                 for line in content:
                     if key + ": " in line:
                         # Convert all attributes to integers
-                        value = line.split(": ")[1].strip()
-                        weapon_data[key] = int(float(value))
+                        weapon_data[key] = float(line.split(": ")[1].strip())
                         break
 
             # Check if any key is missing from the extracted weapon data
