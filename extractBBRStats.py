@@ -99,7 +99,7 @@ def main():
         'weapon_count': weapon_count,
         'weapon_categories' : len(categorized_weapons),
         'categorized_weapon_count': categorized_weapon_count,
-        'weapons': categorized_weapons
+        'weapon_categories': categorized_weapons
     }
 
     script_directory = os.path.dirname(os.path.abspath(__file__))

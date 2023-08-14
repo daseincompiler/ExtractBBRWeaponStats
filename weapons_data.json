@@ -1,10 +1,8 @@
 {
     "update_version": "2.0.2",
-    "date": "2023-08-14",
+    "dump_date": "2023-08-14",
     "weapon_count": 44,
-    "weapon_categories": 11,
-    "categorized_weapon_count": 44,
-    "weapons": {
+    "weapon_categories": {
         "Assault Rifles": {
             "AK74": {
                 "DamageOnInfantryBody": 31,
@@ -775,5 +773,6 @@
                 "ShotSoundDistance": 600
             }
         }
-    }
+    },
+    "categorized_weapon_count": 44
 }
