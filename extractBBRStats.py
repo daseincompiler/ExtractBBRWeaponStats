@@ -105,8 +105,8 @@ def main():
         },
 
         'counts': {
-            'total_weapon': weapon_count,
-            'total_weapon_categories': len(categorized_weapons),
+            'total_weapons': weapon_count,
+            'total_categories': len(categorized_weapons),
             'by_weapon_type': {
                 'assault_rifles': get_weapon_count_by_category("Assault Rifles"),
                 'submachine_guns': get_weapon_count_by_category("Submachine Guns"),
