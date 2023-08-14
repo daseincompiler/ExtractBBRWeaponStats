@@ -4,8 +4,8 @@
         "dump_date": "2023-08-14"
     },
     "counts": {
-        "total_weapon": 44,
-        "total_weapon_categories": 11,
+        "total_weapons": 44,
+        "total_categories": 11,
         "by_weapon_type": {
             "assault_rifles": 12,
             "submachine_guns": 6,
@@ -20,9 +20,10 @@
             "heavy_caliber_pistols": 3
         }
     },
-    "weapon_list": {
+    "weapons_list": {
         "Assault Rifles": {
             "AK74": {
+                "RequiredRank": 0,
                 "DamageOnInfantryBody": 31,
                 "DamageOnLightArmoredVehicles": 4,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -40,6 +41,7 @@
                 "ShotSoundDistance": 600
             },
             "M4A1": {
+                "RequiredRank": 0,
                 "DamageOnInfantryBody": 30,
                 "DamageOnLightArmoredVehicles": 4,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -57,6 +59,7 @@
                 "ShotSoundDistance": 600
             },
             "AK15": {
+                "RequiredRank": 15,
                 "DamageOnInfantryBody": 40,
                 "DamageOnLightArmoredVehicles": 6,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -74,6 +77,7 @@
                 "ShotSoundDistance": 600
             },
             "SCAR-H": {
+                "RequiredRank": 50,
                 "DamageOnInfantryBody": 42,
                 "DamageOnLightArmoredVehicles": 6,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -91,6 +95,7 @@
                 "ShotSoundDistance": 600
             },
             "AUG_A3": {
+                "RequiredRank": 75,
                 "DamageOnInfantryBody": 31,
                 "DamageOnLightArmoredVehicles": 12,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -108,6 +113,7 @@
                 "ShotSoundDistance": 600
             },
             "SG550": {
+                "RequiredRank": 80,
                 "DamageOnInfantryBody": 27,
                 "DamageOnLightArmoredVehicles": 4,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -125,6 +131,7 @@
                 "ShotSoundDistance": 600
             },
             "FAMAS": {
+                "RequiredRank": 95,
                 "DamageOnInfantryBody": 24,
                 "DamageOnLightArmoredVehicles": 0,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -142,6 +149,7 @@
                 "ShotSoundDistance": 600
             },
             "ACR": {
+                "RequiredRank": 110,
                 "DamageOnInfantryBody": 27,
                 "DamageOnLightArmoredVehicles": 2,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -159,6 +167,7 @@
                 "ShotSoundDistance": 600
             },
             "G36C": {
+                "RequiredRank": 120,
                 "DamageOnInfantryBody": 30,
                 "DamageOnLightArmoredVehicles": 2,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -176,6 +185,7 @@
                 "ShotSoundDistance": 600
             },
             "HK419": {
+                "RequiredRank": 135,
                 "DamageOnInfantryBody": 31,
                 "DamageOnLightArmoredVehicles": 6,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -193,6 +203,7 @@
                 "ShotSoundDistance": 600
             },
             "FAL": {
+                "RequiredRank": 140,
                 "DamageOnInfantryBody": 40,
                 "DamageOnLightArmoredVehicles": 4,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -210,6 +221,7 @@
                 "ShotSoundDistance": 600
             },
             "AK5C": {
+                "RequiredRank": 145,
                 "DamageOnInfantryBody": 34,
                 "DamageOnLightArmoredVehicles": 4,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -229,6 +241,7 @@
         },
         "Submachine Guns": {
             "MP7": {
+                "RequiredRank": 0,
                 "DamageOnInfantryBody": 25,
                 "DamageOnLightArmoredVehicles": 0,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -246,6 +259,7 @@
                 "ShotSoundDistance": 600
             },
             "UMP-45": {
+                "RequiredRank": 0,
                 "DamageOnInfantryBody": 25,
                 "DamageOnLightArmoredVehicles": 0,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -263,6 +277,7 @@
                 "ShotSoundDistance": 600
             },
             "PP2000": {
+                "RequiredRank": 25,
                 "DamageOnInfantryBody": 23,
                 "DamageOnLightArmoredVehicles": 0,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -280,6 +295,7 @@
                 "ShotSoundDistance": 600
             },
             "PP19": {
+                "RequiredRank": 45,
                 "DamageOnInfantryBody": 25,
                 "DamageOnLightArmoredVehicles": 0,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -297,6 +313,7 @@
                 "ShotSoundDistance": 600
             },
             "Kriss_Vector": {
+                "RequiredRank": 70,
                 "DamageOnInfantryBody": 22,
                 "DamageOnLightArmoredVehicles": 1,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -314,6 +331,7 @@
                 "ShotSoundDistance": 600
             },
             "MP5": {
+                "RequiredRank": 90,
                 "DamageOnInfantryBody": 29,
                 "DamageOnLightArmoredVehicles": 0,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -333,6 +351,7 @@
         },
         "Personal Defense Weapons": {
             "Honey_Badger": {
+                "RequiredRank": 35,
                 "DamageOnInfantryBody": 32,
                 "DamageOnLightArmoredVehicles": 2,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -350,6 +369,7 @@
                 "ShotSoundDistance": 600
             },
             "Groza": {
+                "RequiredRank": 55,
                 "DamageOnInfantryBody": 34,
                 "DamageOnLightArmoredVehicles": 10,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -367,6 +387,7 @@
                 "ShotSoundDistance": 500
             },
             "P90": {
+                "RequiredRank": 125,
                 "DamageOnInfantryBody": 28,
                 "DamageOnLightArmoredVehicles": 8,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -386,6 +407,7 @@
         },
         "Carbines": {
             "As_Val": {
+                "RequiredRank": 105,
                 "DamageOnInfantryBody": 32,
                 "DamageOnLightArmoredVehicles": 2,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -403,6 +425,7 @@
                 "ShotSoundDistance": 600
             },
             "ScorpionEVO": {
+                "RequiredRank": 150,
                 "DamageOnInfantryBody": 26,
                 "DamageOnLightArmoredVehicles": 2,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -422,6 +445,7 @@
         },
         "Light Support Guns": {
             "L86A1": {
+                "RequiredRank": 0,
                 "DamageOnInfantryBody": 32,
                 "DamageOnLightArmoredVehicles": 4,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -439,6 +463,7 @@
                 "ShotSoundDistance": 600
             },
             "MG36": {
+                "RequiredRank": 50,
                 "DamageOnInfantryBody": 34,
                 "DamageOnLightArmoredVehicles": 4,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -458,6 +483,7 @@
         },
         "Light Machine Guns": {
             "M249": {
+                "RequiredRank": 20,
                 "DamageOnInfantryBody": 30,
                 "DamageOnLightArmoredVehicles": 3,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -475,6 +501,7 @@
                 "ShotSoundDistance": 600
             },
             "Ultimax100": {
+                "RequiredRank": 100,
                 "DamageOnInfantryBody": 29,
                 "DamageOnLightArmoredVehicles": 5,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -494,6 +521,7 @@
         },
         "Designated Marksman Rifles": {
             "MK20": {
+                "RequiredRank": 10,
                 "DamageOnInfantryBody": 45,
                 "DamageOnLightArmoredVehicles": 15,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -511,6 +539,7 @@
                 "ShotSoundDistance": 600
             },
             "M110": {
+                "RequiredRank": 40,
                 "DamageOnInfantryBody": 49,
                 "DamageOnLightArmoredVehicles": 20,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -528,6 +557,7 @@
                 "ShotSoundDistance": 600
             },
             "MK14_EBR": {
+                "RequiredRank": 60,
                 "DamageOnInfantryBody": 40,
                 "DamageOnLightArmoredVehicles": 10,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -545,6 +575,7 @@
                 "ShotSoundDistance": 600
             },
             "SVD": {
+                "RequiredRank": 115,
                 "DamageOnInfantryBody": 42,
                 "DamageOnLightArmoredVehicles": 12,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -564,6 +595,7 @@
         },
         "Sniper Rifles": {
             "SSG_69": {
+                "RequiredRank": 0,
                 "DamageOnInfantryBody": 60,
                 "DamageOnLightArmoredVehicles": 10,
                 "DamageOnHeavyHeavyVehicles": 1,
@@ -581,6 +613,7 @@
                 "ShotSoundDistance": 600
             },
             "SV-98": {
+                "RequiredRank": 30,
                 "DamageOnInfantryBody": 63,
                 "DamageOnLightArmoredVehicles": 10,
                 "DamageOnHeavyHeavyVehicles": 1,
@@ -598,6 +631,7 @@
                 "ShotSoundDistance": 600
             },
             "L96": {
+                "RequiredRank": 65,
                 "DamageOnInfantryBody": 65,
                 "DamageOnLightArmoredVehicles": 10,
                 "DamageOnHeavyHeavyVehicles": 1,
@@ -615,6 +649,7 @@
                 "ShotSoundDistance": 600
             },
             "Rem700": {
+                "RequiredRank": 85,
                 "DamageOnInfantryBody": 65,
                 "DamageOnLightArmoredVehicles": 20,
                 "DamageOnHeavyHeavyVehicles": 1,
@@ -632,6 +667,7 @@
                 "ShotSoundDistance": 600
             },
             "M200": {
+                "RequiredRank": 100,
                 "DamageOnInfantryBody": 70,
                 "DamageOnLightArmoredVehicles": 15,
                 "DamageOnHeavyHeavyVehicles": 5,
@@ -649,6 +685,7 @@
                 "ShotSoundDistance": 600
             },
             "MSR": {
+                "RequiredRank": 130,
                 "DamageOnInfantryBody": 64,
                 "DamageOnLightArmoredVehicles": 15,
                 "DamageOnHeavyHeavyVehicles": 6,
@@ -668,6 +705,7 @@
         },
         "Pistols": {
             "M9": {
+                "RequiredRank": 0,
                 "DamageOnInfantryBody": 30,
                 "DamageOnLightArmoredVehicles": 0,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -685,6 +723,7 @@
                 "ShotSoundDistance": 600
             },
             "MP_443": {
+                "RequiredRank": 0,
                 "DamageOnInfantryBody": 25,
                 "DamageOnLightArmoredVehicles": 0,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -702,6 +741,7 @@
                 "ShotSoundDistance": 600
             },
             "USP": {
+                "RequiredRank": 60,
                 "DamageOnInfantryBody": 25,
                 "DamageOnLightArmoredVehicles": 0,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -721,6 +761,7 @@
         },
         "Automatic Pistols": {
             "Glock_18": {
+                "RequiredRank": 80,
                 "DamageOnInfantryBody": 17,
                 "DamageOnLightArmoredVehicles": 0,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -740,6 +781,7 @@
         },
         "Heavy Caliber Pistols": {
             "Unica": {
+                "RequiredRank": 40,
                 "DamageOnInfantryBody": 60,
                 "DamageOnLightArmoredVehicles": 0,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -757,6 +799,7 @@
                 "ShotSoundDistance": 600
             },
             "Desert_Eagle": {
+                "RequiredRank": 100,
                 "DamageOnInfantryBody": 90,
                 "DamageOnLightArmoredVehicles": 40,
                 "DamageOnHeavyHeavyVehicles": 0,
@@ -774,6 +817,7 @@
                 "ShotSoundDistance": 600
             },
             "Rsh12": {
+                "RequiredRank": 120,
                 "DamageOnInfantryBody": 60,
                 "DamageOnLightArmoredVehicles": 5,
                 "DamageOnHeavyHeavyVehicles": 0,

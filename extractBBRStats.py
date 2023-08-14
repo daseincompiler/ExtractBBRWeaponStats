@@ -39,7 +39,7 @@ def extract_asset_data(directory_path):
 
             weapon_name = filename.split("_", 1)[1].replace(".asset", "")
             data_keys = [
-                "DamageOnInfantryBody", "DamageOnLightArmoredVehicles", "DamageOnHeavyHeavyVehicles",
+                "RequiredRank", "DamageOnInfantryBody", "DamageOnLightArmoredVehicles", "DamageOnHeavyHeavyVehicles",
                 "BulletVelocity", "ProjectileVisualSize", "BaseHipFireAccuracy", "VerticalMouse",
                 "HorizontalMouse", "FirstShotRecoil", "AdsTime", "PlayerRunningSpeed",
                 "ReloadSpeed", "DrawSpeed", "RoundsPerMinute", "ShotSoundDistance"
