@@ -95,7 +95,7 @@ def main():
 
     output_data = {
         'update_version': "2.0.2",
-        'date': datetime.datetime.now().strftime('%Y-%m-%d'),
+        'dump_date': datetime.datetime.now().strftime('%Y-%m-%d'),
         'weapon_count': weapon_count,
         'weapon_categories' : len(categorized_weapons),
         'categorized_weapon_count': categorized_weapon_count,
