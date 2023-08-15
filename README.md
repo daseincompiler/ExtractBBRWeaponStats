@@ -1,5 +1,5 @@
 # ExtractBBRWeaponStats
-An extraction workflow of Battlebit Remastered weapon's stats from Unity assets.  
+An extraction workflow of Battlebit Remastered weapon's stats from Unity assets. If you would like to me extract more data feel free to make an issue and I'll look into it.
 # **Usage Guide**
 
 To extract weapon stats from Battlebit Remastered using AssetRipper and the provided Python script, follow the steps below:
