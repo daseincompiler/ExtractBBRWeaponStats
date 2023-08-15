@@ -26,7 +26,7 @@ To extract weapon stats from Battlebit Remastered using AssetRipper and the prov
 4.  **Run the Provided Python Script**:
     
     -   After AssetRipper completes the export, navigate to this repository on your machine.
-    -   Run the provided Python script.
+    -   Run the provided Python script called `extractBBRStats.py`.
     -   When prompted, select the folder containing the exported "Monobehaviour" asset files. By default, this is located at: `export\BattleBit\ExportedProject\Assets\MonoBehaviour`, where `export` is the folder you selected for exporting in AssetRipper.
 5.  **Check the Output**:
     
