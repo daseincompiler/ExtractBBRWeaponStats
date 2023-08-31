@@ -1,10 +1,10 @@
 {
     "metadata": {
-        "update_version": "2.0.2",
-        "dump_date": "2023-08-14"
+        "update_version": "2.1.1",
+        "dump_date": "2023-08-31"
     },
     "counts": {
-        "total_weapons": 44,
+        "total_weapons": 45,
         "total_categories": 11,
         "by_weapon_type": {
             "assault_rifles": 12,
@@ -132,7 +132,7 @@
             },
             "FAMAS": {
                 "RequiredRank": 95,
-                "DamageOnInfantryBody": 24,
+                "DamageOnInfantryBody": 26,
                 "DamageOnLightArmoredVehicles": 0,
                 "DamageOnHeavyHeavyVehicles": 0,
                 "BulletVelocity": 600,
@@ -174,8 +174,8 @@
                 "BulletVelocity": 600,
                 "ProjectileVisualSize": 0.4,
                 "BaseHipFireAccuracy": 75,
-                "VerticalMouse": 1.4,
-                "HorizontalMouse": 1,
+                "VerticalMouse": 1.45,
+                "HorizontalMouse": 0.84,
                 "FirstShotRecoil": 1,
                 "AdsTime": 0.25,
                 "PlayerRunningSpeed": 1,
@@ -260,14 +260,14 @@
             },
             "UMP-45": {
                 "RequiredRank": 0,
-                "DamageOnInfantryBody": 25,
+                "DamageOnInfantryBody": 28,
                 "DamageOnLightArmoredVehicles": 0,
                 "DamageOnHeavyHeavyVehicles": 0,
-                "BulletVelocity": 500,
+                "BulletVelocity": 475,
                 "ProjectileVisualSize": 0.3,
                 "BaseHipFireAccuracy": 75,
-                "VerticalMouse": 0.9,
-                "HorizontalMouse": 0.5,
+                "VerticalMouse": 1,
+                "HorizontalMouse": 0.65,
                 "FirstShotRecoil": 1,
                 "AdsTime": 0.2,
                 "PlayerRunningSpeed": 1.1,
@@ -284,14 +284,14 @@
                 "BulletVelocity": 350,
                 "ProjectileVisualSize": 0.25,
                 "BaseHipFireAccuracy": 75,
-                "VerticalMouse": 1.2,
+                "VerticalMouse": 1.1,
                 "HorizontalMouse": 0.5,
                 "FirstShotRecoil": 1,
-                "AdsTime": 0.2,
+                "AdsTime": 0.15,
                 "PlayerRunningSpeed": 1.1,
                 "ReloadSpeed": 1,
                 "DrawSpeed": 1,
-                "RoundsPerMinute": 900,
+                "RoundsPerMinute": 1000,
                 "ShotSoundDistance": 600
             },
             "PP19": {
@@ -352,21 +352,21 @@
         "Personal Defense Weapons": {
             "Honey_Badger": {
                 "RequiredRank": 35,
-                "DamageOnInfantryBody": 32,
+                "DamageOnInfantryBody": 28,
                 "DamageOnLightArmoredVehicles": 2,
                 "DamageOnHeavyHeavyVehicles": 0,
-                "BulletVelocity": 440,
+                "BulletVelocity": 400,
                 "ProjectileVisualSize": 0.425,
                 "BaseHipFireAccuracy": 75,
-                "VerticalMouse": 1.5,
-                "HorizontalMouse": 1.9,
+                "VerticalMouse": 1.25,
+                "HorizontalMouse": 1.1,
                 "FirstShotRecoil": 1,
                 "AdsTime": 0.2,
                 "PlayerRunningSpeed": 1.05,
-                "ReloadSpeed": 1,
+                "ReloadSpeed": 1.1,
                 "DrawSpeed": 1,
-                "RoundsPerMinute": 800,
-                "ShotSoundDistance": 600
+                "RoundsPerMinute": 880,
+                "ShotSoundDistance": 200
             },
             "Groza": {
                 "RequiredRank": 55,
@@ -415,14 +415,14 @@
                 "ProjectileVisualSize": 0.425,
                 "BaseHipFireAccuracy": 75,
                 "VerticalMouse": 1.5,
-                "HorizontalMouse": 1.9,
+                "HorizontalMouse": 1.2,
                 "FirstShotRecoil": 1,
                 "AdsTime": 0.2,
                 "PlayerRunningSpeed": 1.05,
-                "ReloadSpeed": 1,
+                "ReloadSpeed": 0.9,
                 "DrawSpeed": 1,
                 "RoundsPerMinute": 800,
-                "ShotSoundDistance": 600
+                "ShotSoundDistance": 200
             },
             "ScorpionEVO": {
                 "RequiredRank": 150,
@@ -508,12 +508,12 @@
                 "BulletVelocity": 600,
                 "ProjectileVisualSize": 0.25,
                 "BaseHipFireAccuracy": 60,
-                "VerticalMouse": 1.5,
+                "VerticalMouse": 1.1,
                 "HorizontalMouse": 0.6,
-                "FirstShotRecoil": 2,
-                "AdsTime": 0.35,
-                "PlayerRunningSpeed": 0.9,
-                "ReloadSpeed": 1,
+                "FirstShotRecoil": 1.5,
+                "AdsTime": 0.3,
+                "PlayerRunningSpeed": 0.925,
+                "ReloadSpeed": 1.1,
                 "DrawSpeed": 1.2,
                 "RoundsPerMinute": 600,
                 "ShotSoundDistance": 600
