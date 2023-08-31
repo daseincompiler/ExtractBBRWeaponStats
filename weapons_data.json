@@ -1,13 +1,13 @@
 {
     "metadata": {
-        "update_version": "2.1.1",
+        "update_version": "2.0.2",
         "dump_date": "2023-08-31"
     },
     "counts": {
         "total_weapons": 45,
         "total_categories": 11,
         "by_weapon_type": {
-            "assault_rifles": 12,
+            "assault_rifles": 13,
             "submachine_guns": 6,
             "personal_defense_weapons": 3,
             "carbines": 2,
@@ -236,6 +236,24 @@
                 "ReloadSpeed": 1.125,
                 "DrawSpeed": 1,
                 "RoundsPerMinute": 600,
+                "ShotSoundDistance": 600
+            },
+            "EmptyGun": {
+                "RequiredRank": 200,
+                "DamageOnInfantryBody": 1,
+                "DamageOnLightArmoredVehicles": 0,
+                "DamageOnHeavyHeavyVehicles": 0,
+                "BulletVelocity": 0,
+                "ProjectileVisualSize": 0,
+                "BaseHipFireAccuracy": 0,
+                "VerticalMouse": 0,
+                "HorizontalMouse": 0,
+                "FirstShotRecoil": 1,
+                "AdsTime": 0.1,
+                "PlayerRunningSpeed": 1.1,
+                "ReloadSpeed": 1,
+                "DrawSpeed": 1,
+                "RoundsPerMinute": 150,
                 "ShotSoundDistance": 600
             }
         },

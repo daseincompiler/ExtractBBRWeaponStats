@@ -5,7 +5,7 @@ import time
 from tkinter import Tk, filedialog
 
 weapon_categories = {
-    "Assault Rifles": ["AK74", "M4A1", "AK15", "SCAR-H", "AUG_A3", "SG550", "FAMAS", "ACR", "G36C", "HK419", "FAL", "AK5C"],
+    "Assault Rifles": ["AK74", "M4A1", "AK15", "SCAR-H", "AUG_A3", "SG550", "FAMAS", "ACR", "G36C", "HK419", "FAL", "AK5C", "EmptyGun"],
 
     "Submachine Guns": ["MP7", "UMP-45", "PP2000", "PP19", "Kriss_Vector", "MP5"],
 
