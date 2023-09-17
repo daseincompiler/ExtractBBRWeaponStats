@@ -5,7 +5,10 @@ import time
 from tkinter import Tk, filedialog
 
 weapon_categories = {
-    "Assault Rifles": ["AK74", "M4A1", "AK15", "SCAR-H", "AUG_A3", "SG550", "FAMAS", "ACR", "G36C", "HK419", "FAL", "AK5C", "EmptyGun"],
+
+    "Not Categorized" : ["EmptyGun"],
+
+    "Assault Rifles": ["AK74", "M4A1", "AK15", "SCAR-H", "AUG_A3", "SG550", "FAMAS", "ACR", "G36C", "HK419", "FAL", "AK5C", "F2000"],
 
     "Submachine Guns": ["MP7", "UMP-45", "PP2000", "PP19", "Kriss_Vector", "MP5"],
 
@@ -17,7 +20,7 @@ weapon_categories = {
 
     "Light Machine Guns": ["M249", "Ultimax100"],
 
-    "Designated Marksman Rifles": ["MK20", "M110", "MK14_EBR", "SVD"],
+    "Designated Marksman Rifles": ["MK20", "M110", "MK14_EBR", "SVD", "G3"],
 
     "Sniper Rifles": ["SSG_69", "SV-98", "L96", "Rem700", "M200", "MSR"],
 
@@ -96,18 +99,28 @@ def main():
 
     weapon_count = len(weapons_data)
 
-    categorized_weapons = categorize_weapons(weapons_data)
 
+    categorized_weapons = categorize_weapons(weapons_data)
     categorized_weapon_count = sum(len(weapons)
-                                   for weapons in categorized_weapons.values())
+                               for weapons in categorized_weapons.values())
+
+    all_weapons_set = set(weapons_data.keys())
+    categorized_weapons_set = set()
+
+    for weapons in categorized_weapons.values():
+        categorized_weapons_set.update(weapons.keys())
+
+    uncategorized_weapons = all_weapons_set - categorized_weapons_set
 
     if weapon_count != categorized_weapon_count:
-        print(
-            f"Warning: there's {weapon_count} weapons raw data count, but only {categorized_weapon_count} categorized weapons count")
+        print(f"Warning: there's {weapon_count} weapons in raw data, but only {categorized_weapon_count} were categorized.")
+
+    if uncategorized_weapons:
+        print(f"Uncategorized weapons: {', '.join(uncategorized_weapons)}")
 
     output_data = {
         'metadata': {
-            'update_version': "2.0.2",
+            'update_version': "2.1.4",
             'dump_date': datetime.datetime.now().strftime('%Y-%m-%d'),
         },
 
