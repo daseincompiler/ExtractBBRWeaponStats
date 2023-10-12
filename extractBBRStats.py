@@ -86,6 +86,9 @@ def categorize_weapons(weapons_data):
 
 def main():
     Tk().withdraw()  # Hide the root tkinter window
+
+    update_version = input("Update version:")
+
     print("Please select the MonoBehaviour Asset Folder, that was dumped by AssetRipper")
     directory_path = filedialog.askdirectory(
         title="Select the MonoBehaviour Asset Folder")
@@ -120,7 +123,7 @@ def main():
 
     output_data = {
         'metadata': {
-            'update_version': "2.1.4",
+            'update_version': update_version,
             'dump_date': datetime.datetime.now().strftime('%Y-%m-%d'),
         },
 
